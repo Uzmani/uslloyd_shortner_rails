@@ -1,0 +1,16 @@
+<h1>Welcome to Uslloyds Url Shortner</h1>
+<h3>Go ahead and sign up!</h3>
+
+<%= form_for @user do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<br>
+<%= f.label :email %>
+<%= f.text_field :email %>
+<br>
+<%= f.label :password_hash %>
+<%= f.text_field :password_hash %>
+<br>
+<%= f.submit "Signup!"%>
+<% end %>
+

@@ -1,4 +1,10 @@
 UslloydShortner::Application.routes.draw do
+  root to: "users#new"
+  resources :users, only: [:new, :show, :create] do
+    resources :urls, only: [:create, :new, :show, :destroy]
+  end
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,6 @@
+<h2>Enter a Url here to be shortend:</h2>
+<%= form_for @url, url: {action: "create"} do |f| %>
+<%= f.label :url %>
+<%= f.text_field :long_url %>
+<%= f.submit "Shorten This!" %>
+<% end %>
